@@ -1,9 +1,9 @@
 <?php
 
-namespace Larapack\Xray\Tests\Unit\Reporters;
+namespace Jaydeep\Xray\Tests\Unit\Reporters;
 
 use PHPUnit\Framework\TestCase;
-use Larapack\Xray\Reporters\MermaidReporter;
+use Jaydeep\Xray\Reporters\MermaidReporter;
 
 class MermaidReporterTest extends TestCase
 {

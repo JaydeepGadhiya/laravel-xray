@@ -1,6 +1,6 @@
 <?php
 
-namespace Larapack\Xray\Support;
+namespace Jaydeep\Xray\Support;
 
 class ClassParser
 {

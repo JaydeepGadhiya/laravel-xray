@@ -1,9 +1,9 @@
 <?php
 
-namespace Larapack\Xray\Tests\Unit\Analyzers;
+namespace Jaydeep\Xray\Tests\Unit\Analyzers;
 
 use PHPUnit\Framework\TestCase;
-use Larapack\Xray\Analyzers\ModelAnalyzer;
+use Jaydeep\Xray\Analyzers\ModelAnalyzer;
 
 class ModelAnalyzerTest extends TestCase
 {

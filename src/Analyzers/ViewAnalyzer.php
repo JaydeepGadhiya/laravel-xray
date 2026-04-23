@@ -1,6 +1,6 @@
 <?php
 
-namespace Larapack\Xray\Analyzers;
+namespace Jaydeep\Xray\Analyzers;
 
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Larapack\Xray\Analyzers;
+namespace Jaydeep\Xray\Analyzers;
 
-use Larapack\Xray\Support\ClassParser;
+use Jaydeep\Xray\Support\ClassParser;
 
 class DependencyAnalyzer
 {

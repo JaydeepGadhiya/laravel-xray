@@ -1,20 +1,14 @@
 {
-    "name": "larapack/laravel-xray",
+    "name": "jaydeep/laravel-xray",
     "description": "Analyze and understand large Laravel applications through architecture visualization and dead code detection.",
     "keywords": ["laravel", "architecture", "analysis", "dead-code", "visualization", "xray", "static-analysis"],
     "license": "MIT",
     "authors": [
         {
             "name": "Jaydeep Gadhiya",
-            "email": "jaydeep@example.com",
-            "role": "Developer"
+            "email": "jaydeepgadhiya5699@gmail.com"
         }
     ],
-    "homepage": "https://github.com/larapack/laravel-xray",
-    "support": {
-        "issues": "https://github.com/larapack/laravel-xray/issues",
-        "source": "https://github.com/larapack/laravel-xray"
-    },
     "require": {
         "php": "^7.4|^8.0|^8.1|^8.2|^8.3|^8.4",
         "illuminate/console": "^8.0|^9.0|^10.0|^11.0|^12.0",
@@ -27,20 +21,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Larapack\\Xray\\": "src/"
+            "Jaydeep\\Xray\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Larapack\\Xray\\Tests\\": "tests/"
+            "Jaydeep\\Xray\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Larapack\\Xray\\LaravelXrayServiceProvider"
+                "Jaydeep\\Xray\\LaravelXrayServiceProvider"
             ]
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

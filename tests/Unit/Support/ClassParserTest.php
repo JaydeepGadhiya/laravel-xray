@@ -1,9 +1,9 @@
 <?php
 
-namespace Larapack\Xray\Tests\Unit\Support;
+namespace Jaydeep\Xray\Tests\Unit\Support;
 
 use PHPUnit\Framework\TestCase;
-use Larapack\Xray\Support\ClassParser;
+use Jaydeep\Xray\Support\ClassParser;
 
 class ClassParserTest extends TestCase
 {

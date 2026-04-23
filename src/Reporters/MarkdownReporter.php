@@ -1,10 +1,10 @@
 <?php
 
-namespace Larapack\Xray\Reporters;
+namespace Jaydeep\Xray\Reporters;
 
 use RuntimeException;
-use Larapack\Xray\Support\ClassParser;
-use Larapack\Xray\Support\Concerns\EnsuresOutputDirectory;
+use Jaydeep\Xray\Support\ClassParser;
+use Jaydeep\Xray\Support\Concerns\EnsuresOutputDirectory;
 
 /**
  * Generates a comprehensive Markdown report from scan results.

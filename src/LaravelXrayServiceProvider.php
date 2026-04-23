@@ -1,12 +1,12 @@
 <?php
 
-namespace Larapack\Xray;
+namespace Jaydeep\Xray;
 
 use Illuminate\Support\ServiceProvider;
-use Larapack\Xray\Commands\ScanCommand;
-use Larapack\Xray\Commands\ArchitectureCommand;
-use Larapack\Xray\Commands\DeadCodeCommand;
-use Larapack\Xray\Commands\ReportCommand;
+use Jaydeep\Xray\Commands\ScanCommand;
+use Jaydeep\Xray\Commands\ArchitectureCommand;
+use Jaydeep\Xray\Commands\DeadCodeCommand;
+use Jaydeep\Xray\Commands\ReportCommand;
 
 class LaravelXrayServiceProvider extends ServiceProvider
 {

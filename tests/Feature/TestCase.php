@@ -1,8 +1,8 @@
 <?php
 
-namespace Larapack\Xray\Tests\Feature;
+namespace Jaydeep\Xray\Tests\Feature;
 
-use Larapack\Xray\LaravelXrayServiceProvider;
+use Jaydeep\Xray\LaravelXrayServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

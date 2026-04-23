@@ -1,6 +1,6 @@
 <?php
 
-namespace Larapack\Xray\Support\Concerns;
+namespace Jaydeep\Xray\Support\Concerns;
 
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;

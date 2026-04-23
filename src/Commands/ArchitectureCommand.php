@@ -1,12 +1,12 @@
 <?php
 
-namespace Larapack\Xray\Commands;
+namespace Jaydeep\Xray\Commands;
 
 use Illuminate\Console\Command;
-use Larapack\Xray\Reporters\ConsoleReporter;
-use Larapack\Xray\Reporters\JsonReporter;
-use Larapack\Xray\Reporters\MermaidReporter;
-use Larapack\Xray\Support\ProjectScanner;
+use Jaydeep\Xray\Reporters\ConsoleReporter;
+use Jaydeep\Xray\Reporters\JsonReporter;
+use Jaydeep\Xray\Reporters\MermaidReporter;
+use Jaydeep\Xray\Support\ProjectScanner;
 
 class ArchitectureCommand extends Command
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Larapack\Xray\Reporters;
+namespace Jaydeep\Xray\Reporters;
 
-use Larapack\Xray\Support\ClassParser;
+use Jaydeep\Xray\Support\ClassParser;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**

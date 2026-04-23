@@ -1,10 +1,10 @@
 <?php
 
-namespace Larapack\Xray\Tests\Unit\Analyzers;
+namespace Jaydeep\Xray\Tests\Unit\Analyzers;
 
 use PHPUnit\Framework\TestCase;
-use Larapack\Xray\Analyzers\DependencyAnalyzer;
-use Larapack\Xray\Support\ClassParser;
+use Jaydeep\Xray\Analyzers\DependencyAnalyzer;
+use Jaydeep\Xray\Support\ClassParser;
 
 class DependencyAnalyzerTest extends TestCase
 {

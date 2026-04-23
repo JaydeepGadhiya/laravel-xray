@@ -1,8 +1,8 @@
 <?php
 
-namespace Larapack\Xray\Tests\Feature\Commands;
+namespace Jaydeep\Xray\Tests\Feature\Commands;
 
-use Larapack\Xray\Tests\Feature\TestCase;
+use Jaydeep\Xray\Tests\Feature\TestCase;
 
 class ArchitectureCommandTest extends TestCase
 {

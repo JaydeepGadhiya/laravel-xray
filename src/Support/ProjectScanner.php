@@ -1,15 +1,15 @@
 <?php
 
-namespace Larapack\Xray\Support;
+namespace Jaydeep\Xray\Support;
 
-use Larapack\Xray\Analyzers\ControllerAnalyzer;
-use Larapack\Xray\Analyzers\DependencyAnalyzer;
-use Larapack\Xray\Analyzers\FormRequestAnalyzer;
-use Larapack\Xray\Analyzers\MiddlewareAnalyzer;
-use Larapack\Xray\Analyzers\ModelAnalyzer;
-use Larapack\Xray\Analyzers\RouteAnalyzer;
-use Larapack\Xray\Analyzers\ServiceAnalyzer;
-use Larapack\Xray\Analyzers\ViewAnalyzer;
+use Jaydeep\Xray\Analyzers\ControllerAnalyzer;
+use Jaydeep\Xray\Analyzers\DependencyAnalyzer;
+use Jaydeep\Xray\Analyzers\FormRequestAnalyzer;
+use Jaydeep\Xray\Analyzers\MiddlewareAnalyzer;
+use Jaydeep\Xray\Analyzers\ModelAnalyzer;
+use Jaydeep\Xray\Analyzers\RouteAnalyzer;
+use Jaydeep\Xray\Analyzers\ServiceAnalyzer;
+use Jaydeep\Xray\Analyzers\ViewAnalyzer;
 
 /**
  * Orchestrates all analyzers to produce a complete project scan result.

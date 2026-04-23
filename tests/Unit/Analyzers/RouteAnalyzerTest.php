@@ -1,9 +1,9 @@
 <?php
 
-namespace Larapack\Xray\Tests\Unit\Analyzers;
+namespace Jaydeep\Xray\Tests\Unit\Analyzers;
 
 use PHPUnit\Framework\TestCase;
-use Larapack\Xray\Analyzers\RouteAnalyzer;
+use Jaydeep\Xray\Analyzers\RouteAnalyzer;
 
 class RouteAnalyzerTest extends TestCase
 {

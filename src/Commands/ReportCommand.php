@@ -1,13 +1,13 @@
 <?php
 
-namespace Larapack\Xray\Commands;
+namespace Jaydeep\Xray\Commands;
 
 use Illuminate\Console\Command;
-use Larapack\Xray\Reporters\HtmlReporter;
-use Larapack\Xray\Reporters\JsonReporter;
-use Larapack\Xray\Reporters\MarkdownReporter;
-use Larapack\Xray\Reporters\MermaidReporter;
-use Larapack\Xray\Support\ProjectScanner;
+use Jaydeep\Xray\Reporters\HtmlReporter;
+use Jaydeep\Xray\Reporters\JsonReporter;
+use Jaydeep\Xray\Reporters\MarkdownReporter;
+use Jaydeep\Xray\Reporters\MermaidReporter;
+use Jaydeep\Xray\Support\ProjectScanner;
 
 class ReportCommand extends Command
 {

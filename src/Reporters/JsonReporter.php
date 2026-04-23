@@ -1,9 +1,9 @@
 <?php
 
-namespace Larapack\Xray\Reporters;
+namespace Jaydeep\Xray\Reporters;
 
 use RuntimeException;
-use Larapack\Xray\Support\Concerns\EnsuresOutputDirectory;
+use Jaydeep\Xray\Support\Concerns\EnsuresOutputDirectory;
 
 /**
  * Generates JSON report files from scan results.
