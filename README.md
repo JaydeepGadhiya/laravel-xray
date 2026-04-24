@@ -1,9 +1,9 @@
 # Laravel X-Ray
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/larapack/laravel-xray.svg?style=flat-square)](https://packagist.org/packages/larapack/laravel-xray)
-[![PHP Version](https://img.shields.io/packagist/php-v/larapack/laravel-xray.svg?style=flat-square)](https://packagist.org/packages/larapack/laravel-xray)
-[![Laravel Version](https://img.shields.io/badge/Laravel-8--12-orange?style=flat-square)](https://laravel.com)
-[![License](https://img.shields.io/packagist/l/larapack/laravel-xray.svg?style=flat-square)](LICENSE)
+[![Laravel](https://img.shields.io/badge/Laravel-8%2B-red)]()
+[![PHP](https://img.shields.io/badge/PHP-7.4%2B-blue)]()
+[![License](https://img.shields.io/badge/license-MIT-green)]()
+[![Stars](https://img.shields.io/github/stars/JaydeepGadhiya/laravel-xray)]()
 
 Analyze and understand large Laravel applications through architecture visualization and dead code detection.
 
@@ -164,12 +164,12 @@ All four commands share a common `--path=` option that overrides the base path u
 
 ### xray:scan
 
-Runs a full project health scan across all component types and prints a summary to the terminal.
+Runs a full project health scan across all component types, prints a summary to the terminal, and always saves an HTML report to the configured `output_path`.
 
 ```bash
 php artisan xray:scan
 php artisan xray:scan --json           # Output full result as JSON to stdout
-php artisan xray:scan --save           # Save JSON, Markdown, and HTML reports
+php artisan xray:scan --save           # Also save JSON and Markdown reports
 php artisan xray:scan --path=/custom   # Override the base scan path
 ```
 
@@ -178,8 +178,10 @@ php artisan xray:scan --path=/custom   # Override the base scan path
 | Option | Description |
 |--------|-------------|
 | `--json` | Print the full scan result as pretty-printed JSON to stdout after the summary |
-| `--save` | Write `scan-report.json`, `scan-report.md`, and `xray-report.html` to the configured `output_path` |
+| `--save` | Additionally write `scan-report.json` and `scan-report.md` to the configured `output_path` |
 | `--path=` | Override the base path for all scan directory resolution |
+
+> **Note:** `xray-report.html` is always generated and saved on every scan run, regardless of `--save`.
 
 **Example console output**
 
@@ -217,13 +219,20 @@ Scanning project...
 Scan complete!
 ```
 
-When `--save` is used, the command lists every file written:
+The HTML report path is always shown after the scan:
 
 ```
 Reports saved:
+  - /path/to/storage/app/project-xray/xray-report.html
+```
+
+When `--save` is also passed, JSON and Markdown reports are added:
+
+```
+Reports saved:
+  - /path/to/storage/app/project-xray/xray-report.html
   - /path/to/storage/app/project-xray/scan-report.json
   - /path/to/storage/app/project-xray/scan-report.md
-  - /path/to/storage/app/project-xray/xray-report.html
 ```
 
 ---
@@ -606,7 +615,7 @@ php artisan xray:report --path=/var/www/another-project
     path: storage/app/project-xray/
 ```
 
-For a quick health check without saving files:
+For a quick health check (HTML report is always saved automatically):
 
 ```bash
 php artisan xray:scan

@@ -36,23 +36,23 @@ class ScanCommand extends Command
                 $this->line(json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
             }
 
-            $savedPaths = [];
+            $outputPath = config('xray.output_path');
+
+            if (! is_dir($outputPath)) {
+                mkdir($outputPath, 0755, true);
+            }
+
+            $htmlReporter = new HtmlReporter();
+            $htmlPath = $htmlReporter->generate($result, $outputPath);
+
+            $savedPaths = [$htmlPath];
 
             if ($this->option('save')) {
-                $outputPath = config('xray.output_path');
-
-                if (! is_dir($outputPath)) {
-                    mkdir($outputPath, 0755, true);
-                }
-
                 $jsonReporter = new JsonReporter();
                 $savedPaths[] = $jsonReporter->generateFullReport($result, $outputPath);
 
                 $markdownReporter = new MarkdownReporter();
                 $savedPaths[] = $markdownReporter->generate($result, $outputPath);
-
-                $htmlReporter = new HtmlReporter();
-                $savedPaths[] = $htmlReporter->generate($result, $outputPath);
             }
 
             $this->newLine();
