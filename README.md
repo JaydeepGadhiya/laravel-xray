@@ -52,7 +52,7 @@ Laravel X-Ray is a developer tool that scans your application's source code stat
 ### Step 1 — Require the package
 
 ```bash
-composer require larapack/laravel-xray
+composer require jaydeep/laravel-xray
 ```
 
 ### Step 2 — Auto-discovery (Laravel 5.5 and above)
@@ -72,7 +72,7 @@ If your application has auto-discovery disabled, open `config/app.php` and add t
 ```php
 'providers' => [
     // ...
-    Larapack\Xray\LaravelXrayServiceProvider::class,
+    Jaydeep\Xray\LaravelXrayServiceProvider::class,
 ],
 ```
 
