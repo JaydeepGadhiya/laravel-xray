@@ -1,5 +1,6 @@
 {
     "name": "jaydeep/laravel-xray",
+    "version": "1.0.0",
     "description": "Analyze and understand large Laravel applications through architecture visualization and dead code detection.",
     "keywords": ["laravel", "architecture", "analysis", "dead-code", "visualization", "xray", "static-analysis"],
     "license": "MIT",
